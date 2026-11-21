@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="83" viewBox="0 0 70 83"><defs><style id="current-color-scheme" type="text/css">
+.ColorScheme-Text{color:#101318;}.ColorScheme-Background{color:#ffffff;}.ColorScheme-Highlight{color:#2f5bea;}
+.ColorScheme-ButtonBackground{color:#ffffff;}.ColorScheme-ButtonText{color:#101318;}.ColorScheme-ViewBackground{color:#ffffff;}
+.ColorScheme-ViewText{color:#101318;}.ColorScheme-NegativeText{color:#b91c1c;}.ColorScheme-PositiveText{color:#15803d;}.ColorScheme-NeutralText{color:#b45309;}
+</style></defs>
+<g id="topleft"><rect x="37" y="0" width="12" height="12" fill="#000" fill-opacity="0"/><path d="M49 0 L47 0 A10 10 0 0 0 37 10 L37 12 L49 12 Z" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="top"><rect x="49" y="0" width="1" height="12" fill="#000" fill-opacity="0"/><rect x="49" y="0" width="1" height="12" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="topright"><rect x="50" y="0" width="12" height="12" fill="#000" fill-opacity="0"/><path d="M50 0 L52 0 A10 10 0 0 1 62 10 L62 12 L50 12 Z" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="left"><rect x="37" y="12" width="12" height="1" fill="#000" fill-opacity="0"/><rect x="37" y="12" width="12" height="1" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="center"><rect x="49" y="12" width="1" height="1" fill="#000" fill-opacity="0"/><rect x="49" y="12" width="1" height="1" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="right"><rect x="50" y="12" width="12" height="1" fill="#000" fill-opacity="0"/><rect x="50" y="12" width="12" height="1" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="bottomleft"><rect x="37" y="13" width="12" height="12" fill="#000" fill-opacity="0"/><path d="M49 25 L47 25 A10 10 0 0 1 37 15 L37 13 L49 13 Z" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="bottom"><rect x="49" y="13" width="1" height="12" fill="#000" fill-opacity="0"/><rect x="49" y="13" width="1" height="12" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<g id="bottomright"><rect x="50" y="13" width="12" height="12" fill="#000" fill-opacity="0"/><path d="M50 25 L52 25 A10 10 0 0 0 62 15 L62 13 L50 13 Z" fill="currentColor" class="ColorScheme-Background" fill-opacity="0.62"/></g>
+<rect id="hint-left-margin" x="64" y="0" width="4" height="1" fill="#000" fill-opacity="0"/>
+<rect id="hint-top-margin" x="64" y="0" width="1" height="4" fill="#000" fill-opacity="0"/>
+<rect id="hint-right-margin" x="64" y="0" width="4" height="1" fill="#000" fill-opacity="0"/>
+<rect id="hint-bottom-margin" x="64" y="0" width="1" height="4" fill="#000" fill-opacity="0"/>
+<g id="shadow-topleft"><rect x="0" y="23" width="13" height="13" fill="#000" fill-opacity="0"/><image x="0" y="23" width="13" height="13" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAnklEQVR42u3TsQ6DMAxF0RsDgZZWqvj/74S2KtDFSIwkwZ7w4ik5cuIHV12lFRwMASQYXl4B9TZMMABqoAFW4APMZ0MNEBWYtJ/+zx3w1IlMlkEUARgtt+mxg8xi0acgkgndtL8tp4nAyyPlQ85LpB7oNISLJSTAPXeNU6BWp1mtob4klEehSvtsDUXgW7quRwPqArXAzwtaPKBYCv0BsxoUqYPvzkcAAAAASUVORK5CYII="/></g>
+<g id="shadow-top"><rect x="13" y="23" width="1" height="13" fill="#000" fill-opacity="0"/><image x="13" y="23" width="1" height="13" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAaCAYAAACdM43SAAAAFElEQVR42mNgIAEwMjAwcDMMUQAACZoADah3VzEAAAAASUVORK5CYII="/></g>
+<g id="shadow-topright"><rect x="14" y="23" width="13" height="13" fill="#000" fill-opacity="0"/><image x="14" y="23" width="13" height="13" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAuklEQVR42u2Vyw6DMAwEp4ZC4VT1/78TIZ69LJKFekiARD2wF0eR0chrO8CtW1IBlDqvKUElUDnQBMzAcjXosauu1t0o6JIC5O8axUHQS3r0S6MsbAHT+fKK9moV+zNWFgE5o+vfdHQ6i8C8SRZWOkfLInJ7xSbXkr+BZw6QAZ9IN4J75LUKUsbsmB2sqnM7lqwi/62FTqGdAHVumZOCZr0sltq67TdjIUNhJ0ED8Ept3fY01TlAy9+BvuNaIGypN7OPAAAAAElFTkSuQmCC"/></g>
+<g id="shadow-left"><rect x="0" y="36" width="13" height="1" fill="#000" fill-opacity="0"/><image x="0" y="36" width="13" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAACCAYAAABGz8w4AAAAFklEQVR42mNgIA7oMVAImIhUx0ypRQAg8wA0w+rrRAAAAABJRU5ErkJggg=="/></g>
+<g id="shadow-center"><rect x="13" y="36" width="1" height="1" fill="#000" fill-opacity="0"/></g>
+<g id="shadow-right"><rect x="14" y="36" width="13" height="1" fill="#000" fill-opacity="0"/><image x="14" y="36" width="13" height="1" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAACCAYAAABGz8w4AAAAFklEQVR42mNgoBzoEaOIiQoWsRCjCAAbvAA1DCwDOwAAAABJRU5ErkJggg=="/></g>
+<g id="shadow-bottomleft"><rect x="0" y="37" width="13" height="13" fill="#000" fill-opacity="0"/><image x="0" y="37" width="13" height="13" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAs0lEQVR42u2UwQrCMBBEX1tj1Krgzf//RsHSVuNlFnqSJCR6yUAIgQ1vZzYE4nUF7kBHhoaE2hcwAgGYU0F9Qu0KPIFL4r1kEMBD+61mdABvRTfqPNcCWYROsFWrCsiceM1riYHlguzlOeAcE2MuyOa1ADvF6IFJTRQFGWzW67UoUQNFQVtYkLuj4uw0u0Dud/JFDjgBB5no5W4qDbLmzdlewKEGaAs0l54fqaOpqanpf/oAOzAgsCJL/+AAAAAASUVORK5CYII="/></g>
+<g id="shadow-bottom"><rect x="13" y="37" width="1" height="13" fill="#000" fill-opacity="0"/><image x="13" y="37" width="1" height="13" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAaCAYAAACdM43SAAAAH0lEQVR42mNgoB9gZGBgUGBgYGBgYWBg+AsTYaST7QCC/QElBaV/QQAAAABJRU5ErkJggg=="/></g>
+<g id="shadow-bottomright"><rect x="14" y="37" width="13" height="13" fill="#000" fill-opacity="0"/><image x="14" y="37" width="13" height="13" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAuElEQVR42u2TywrCMBBFT1uftFXUjf//gyLFGO3LzV1IEUwTAy5yN4HAzOHOnSnwUwac9T5dCnJPUCnI3bXAB5QDNXADupigAzAKRCxQDayBBuhjgbYCWcD4zNsVcgJa4KrRzV5Tl3HttMaXOQvwrsUXt0dl8pCTjoDD+/RXycmoTJoQyBRU6BAr/bcK3QADgcqAPbABlmrY6+JNqItpRqWaW2VhBRj5sWpgJXcZERW1eVJSUtIf6AXdniZKPSD2ywAAAABJRU5ErkJggg=="/></g>
+<rect id="shadow-hint-left-margin" x="30" y="23" width="5" height="1" fill="#000" fill-opacity="0"/>
+<rect id="shadow-hint-top-margin" x="30" y="23" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="shadow-hint-right-margin" x="30" y="23" width="5" height="1" fill="#000" fill-opacity="0"/>
+<rect id="shadow-hint-bottom-margin" x="30" y="23" width="1" height="7" fill="#000" fill-opacity="0"/>
+<g id="mask-topleft"><rect x="0" y="56" width="10" height="10" fill="#000" fill-opacity="0"/><path d="M10 56 L10 56 A10 10 0 0 0 0 66 L0 66 L10 66 Z" fill="#000000"/></g>
+<g id="mask-top"><rect x="10" y="56" width="1" height="10" fill="#000" fill-opacity="0"/><rect x="10" y="56" width="1" height="10" fill="#000000"/></g>
+<g id="mask-topright"><rect x="11" y="56" width="10" height="10" fill="#000" fill-opacity="0"/><path d="M11 56 L11 56 A10 10 0 0 1 21 66 L21 66 L11 66 Z" fill="#000000"/></g>
+<g id="mask-left"><rect x="0" y="66" width="10" height="1" fill="#000" fill-opacity="0"/><rect x="0" y="66" width="10" height="1" fill="#000000"/></g>
+<g id="mask-center"><rect x="10" y="66" width="1" height="1" fill="#000" fill-opacity="0"/><rect x="10" y="66" width="1" height="1" fill="#000000"/></g>
+<g id="mask-right"><rect x="11" y="66" width="10" height="1" fill="#000" fill-opacity="0"/><rect x="11" y="66" width="10" height="1" fill="#000000"/></g>
+<g id="mask-bottomleft"><rect x="0" y="67" width="10" height="10" fill="#000" fill-opacity="0"/><path d="M10 77 L10 77 A10 10 0 0 1 0 67 L0 67 L10 67 Z" fill="#000000"/></g>
+<g id="mask-bottom"><rect x="10" y="67" width="1" height="10" fill="#000" fill-opacity="0"/><rect x="10" y="67" width="1" height="10" fill="#000000"/></g>
+<g id="mask-bottomright"><rect x="11" y="67" width="10" height="10" fill="#000" fill-opacity="0"/><path d="M11 77 L11 77 A10 10 0 0 0 21 67 L21 67 L11 67 Z" fill="#000000"/></g>
+<rect id="mask-hint-left-margin" x="23" y="56" width="0.01" height="1" fill="#000" fill-opacity="0"/>
+<rect id="mask-hint-top-margin" x="23" y="56" width="1" height="0.01" fill="#000" fill-opacity="0"/>
+<rect id="mask-hint-right-margin" x="23" y="56" width="0.01" height="1" fill="#000" fill-opacity="0"/>
+<rect id="mask-hint-bottom-margin" x="23" y="56" width="1" height="0.01" fill="#000" fill-opacity="0"/>
+</svg>

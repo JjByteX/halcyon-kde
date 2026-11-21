@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jj Bassig"
+            }
+        ],
+        "Id": "org.jjbytex.halcyon.day",
+        "Name": "Halcyon Day",
+        "Description": "A macOS 27-inspired look for Plasma (day): soft glass edges, round traffic-light window buttons, and a matching colour scheme. Bundles settings for the Halcyon window decoration and Halcyon Glass Plasma style, which must be installed too.",
+        "License": "GPL-3.0-or-later",
+        "Version": "1.0",
+        "Website": "https://github.com/JjByteX"
+    }
+}

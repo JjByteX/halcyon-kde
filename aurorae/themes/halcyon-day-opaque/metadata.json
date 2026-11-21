@@ -1,0 +1,18 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "doncsugar"
+            }
+        ],
+        "Category": "",
+        "Dependencies": [],
+        "Description": "Halcyon: a macOS 27-inspired window decoration with soft light edges. Based on Summaculate by doncsugar.",
+        "EnabledByDefault": true,
+        "Id": "halcyon-day-opaque",
+        "License": "GPLv3",
+        "Name": "Halcyon Day Opaque",
+        "Version": "1.0"
+    }
+}

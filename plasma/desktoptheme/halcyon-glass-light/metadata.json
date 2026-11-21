@@ -1,0 +1,16 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jj Bassig"
+            }
+        ],
+        "Description": "Halcyon Glass: a macOS 27-inspired Plasma style with a soft glass edge, following the system colour scheme (light)",
+        "EnabledByDefault": true,
+        "Id": "halcyon-glass-light",
+        "License": "MIT",
+        "Name": "Halcyon Glass Light",
+        "Version": "1.0"
+    },
+    "X-Plasma-API": "5.0"
+}

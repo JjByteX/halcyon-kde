@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="280" viewBox="0 0 80 280"><defs><style id="current-color-scheme" type="text/css">
+.ColorScheme-Text{color:#101318;}.ColorScheme-Background{color:#ffffff;}.ColorScheme-Highlight{color:#2f5bea;}
+.ColorScheme-ButtonBackground{color:#ffffff;}.ColorScheme-ButtonText{color:#101318;}.ColorScheme-ViewBackground{color:#ffffff;}
+.ColorScheme-ViewText{color:#101318;}.ColorScheme-NegativeText{color:#b91c1c;}.ColorScheme-PositiveText{color:#15803d;}.ColorScheme-NeutralText{color:#b45309;}
+</style></defs>
+<rect id="hint-stretch-borders" x="71" y="0" width="1" height="1" fill="#000" fill-opacity="0"/>
+<g id="normal-top"><rect x="0" y="0" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="normal-center"><rect x="0" y="12" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="normal-bottom"><rect x="0" y="13" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<rect id="normal-hint-left-margin" x="71" y="0" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="normal-hint-top-margin" x="71" y="0" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="normal-hint-right-margin" x="71" y="0" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="normal-hint-bottom-margin" x="71" y="0" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="minimized-top"><rect x="0" y="28" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="minimized-center"><rect x="0" y="40" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="minimized-bottom"><rect x="0" y="41" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<rect id="minimized-hint-left-margin" x="71" y="28" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="minimized-hint-top-margin" x="71" y="28" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="minimized-hint-right-margin" x="71" y="28" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="minimized-hint-bottom-margin" x="71" y="28" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="hover-top"><rect x="0" y="56" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="hover-center"><rect x="0" y="68" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="hover-bottom"><rect x="0" y="69" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<rect id="hover-hint-left-margin" x="71" y="56" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="hover-hint-top-margin" x="71" y="56" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="hover-hint-right-margin" x="71" y="56" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="hover-hint-bottom-margin" x="71" y="56" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="focus-top"><rect x="0" y="84" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="focus-center"><rect x="0" y="96" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="focus-bottom"><rect x="0" y="97" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<rect id="focus-hint-left-margin" x="71" y="84" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="focus-hint-top-margin" x="71" y="84" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="focus-hint-right-margin" x="71" y="84" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="focus-hint-bottom-margin" x="71" y="84" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="attention-top"><rect x="0" y="112" width="68" height="12" fill="#000" fill-opacity="0"/>
+<path d="M0 124 L0 120 A8 8 0 0 1 8 112 L60 112 A8 8 0 0 1 68 120 L68 124 Z" fill="currentColor" class="ColorScheme-Highlight" fill-opacity="0.3"/>
+</g>
+<g id="attention-center"><rect x="0" y="124" width="68" height="1" fill="#000" fill-opacity="0"/>
+<rect x="0" y="124" width="68" height="1" fill="currentColor" class="ColorScheme-Highlight" fill-opacity="0.3"/>
+</g>
+<g id="attention-bottom"><rect x="0" y="125" width="68" height="12" fill="#000" fill-opacity="0"/>
+<path d="M0 125 L0 129 A8 8 0 0 0 8 137 L60 137 A8 8 0 0 0 68 129 L68 125 Z" fill="currentColor" class="ColorScheme-Highlight" fill-opacity="0.3"/>
+</g>
+<rect id="attention-hint-left-margin" x="71" y="112" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="attention-hint-top-margin" x="71" y="112" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="attention-hint-right-margin" x="71" y="112" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="attention-hint-bottom-margin" x="71" y="112" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="south-normal-top"><rect x="0" y="140" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-normal-center"><rect x="0" y="152" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-normal-bottom"><rect x="0" y="153" width="68" height="12" fill="#000" fill-opacity="0"/>
+<circle cx="34" cy="158" r="2" fill="currentColor" class="ColorScheme-Text" fill-opacity="0.9"/>
+</g>
+<rect id="south-normal-hint-left-margin" x="71" y="140" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-normal-hint-top-margin" x="71" y="140" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="south-normal-hint-right-margin" x="71" y="140" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-normal-hint-bottom-margin" x="71" y="140" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="south-minimized-top"><rect x="0" y="168" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-minimized-center"><rect x="0" y="180" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-minimized-bottom"><rect x="0" y="181" width="68" height="12" fill="#000" fill-opacity="0"/>
+<circle cx="34" cy="186" r="2" fill="currentColor" class="ColorScheme-Text" fill-opacity="0.9"/>
+</g>
+<rect id="south-minimized-hint-left-margin" x="71" y="168" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-minimized-hint-top-margin" x="71" y="168" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="south-minimized-hint-right-margin" x="71" y="168" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-minimized-hint-bottom-margin" x="71" y="168" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="south-hover-top"><rect x="0" y="196" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-hover-center"><rect x="0" y="208" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-hover-bottom"><rect x="0" y="209" width="68" height="12" fill="#000" fill-opacity="0"/>
+<circle cx="34" cy="214" r="2" fill="currentColor" class="ColorScheme-Text" fill-opacity="0.9"/>
+</g>
+<rect id="south-hover-hint-left-margin" x="71" y="196" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-hover-hint-top-margin" x="71" y="196" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="south-hover-hint-right-margin" x="71" y="196" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-hover-hint-bottom-margin" x="71" y="196" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="south-focus-top"><rect x="0" y="224" width="68" height="12" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-focus-center"><rect x="0" y="236" width="68" height="1" fill="#000" fill-opacity="0"/>
+</g>
+<g id="south-focus-bottom"><rect x="0" y="237" width="68" height="12" fill="#000" fill-opacity="0"/>
+<circle cx="34" cy="242" r="2" fill="currentColor" class="ColorScheme-Text" fill-opacity="0.9"/>
+</g>
+<rect id="south-focus-hint-left-margin" x="71" y="224" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-focus-hint-top-margin" x="71" y="224" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="south-focus-hint-right-margin" x="71" y="224" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-focus-hint-bottom-margin" x="71" y="224" width="1" height="3" fill="#000" fill-opacity="0"/>
+<g id="south-attention-top"><rect x="0" y="252" width="68" height="12" fill="#000" fill-opacity="0"/>
+<path d="M0 264 L0 260 A8 8 0 0 1 8 252 L60 252 A8 8 0 0 1 68 260 L68 264 Z" fill="currentColor" class="ColorScheme-Highlight" fill-opacity="0.3"/>
+</g>
+<g id="south-attention-center"><rect x="0" y="264" width="68" height="1" fill="#000" fill-opacity="0"/>
+<rect x="0" y="264" width="68" height="1" fill="currentColor" class="ColorScheme-Highlight" fill-opacity="0.3"/>
+</g>
+<g id="south-attention-bottom"><rect x="0" y="265" width="68" height="12" fill="#000" fill-opacity="0"/>
+<path d="M0 265 L0 269 A8 8 0 0 0 8 277 L60 277 A8 8 0 0 0 68 269 L68 265 Z" fill="currentColor" class="ColorScheme-Highlight" fill-opacity="0.3"/>
+<circle cx="34" cy="270" r="2" fill="currentColor" class="ColorScheme-Text" fill-opacity="0.9"/>
+</g>
+<rect id="south-attention-hint-left-margin" x="71" y="252" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-attention-hint-top-margin" x="71" y="252" width="1" height="3" fill="#000" fill-opacity="0"/>
+<rect id="south-attention-hint-right-margin" x="71" y="252" width="3" height="1" fill="#000" fill-opacity="0"/>
+<rect id="south-attention-hint-bottom-margin" x="71" y="252" width="1" height="3" fill="#000" fill-opacity="0"/>
+</svg>

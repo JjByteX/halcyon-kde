@@ -1,0 +1,6 @@
+[Misc]
+Name=Halcyon Glass
+Comment=Breeze widget style with the Halcyon glass edge, following the Plasma style
+
+[KDE]
+WidgetStyle=HalcyonGlass
