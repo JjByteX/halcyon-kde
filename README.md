@@ -1,8 +1,8 @@
 # Halcyon
 
-A KDE Plasma 6 theme inspired by macOS 27, with day and night variants, round traffic-light window buttons on the left, and soft glass panels.
+A macOS 27-inspired theme for KDE Plasma 6. Day and night variants, traffic-light buttons, glass panels.
 
-> **Alpha.** Halcyon is under active development. Expect rough edges. Bug reports are welcome.
+> **Alpha.** Expect rough edges. Bug reports welcome.
 
 ## Screenshots
 
@@ -26,13 +26,13 @@ Breeze (KDE's default) on the left, Halcyon Night on the right.
 
 ## What you get
 
-Two global themes, **Halcyon Night** and **Halcyon Day**, that change the window buttons and decorations, panels and popups, colours, buttons and sliders (the optional application style), and icons (Papirus, if you have it installed). Your cursor, fonts and wallpaper stay as they are.
+Two global themes, **Halcyon Night** and **Halcyon Day**. They change window decorations, panels, popups, colours, buttons, sliders and icons. Cursor, fonts and wallpaper stay as they are.
 
 ## Install
 
-You need KDE Plasma 6 on Linux. Nothing needs root; everything goes into your home folder.
+Needs KDE Plasma 6. No root needed.
 
-1. Optional: install the Papirus icon theme (the package is called `papirus-icon-theme` on most distros). Halcyon uses it if it's there. To keep your own icons, run the installer with `--no-icons`.
+1. Optional: install `papirus-icon-theme`. Halcyon uses it if found. Run the installer with `--no-icons` to keep your own icons.
 2. In the folder with `halcyon.zip`, run:
 
        unzip halcyon.zip && cd halcyon
@@ -40,11 +40,11 @@ You need KDE Plasma 6 on Linux. Nothing needs root; everything goes into your ho
 
 3. Open **System Settings > Colors & Themes > Global Theme** and pick **Halcyon Night** or **Halcyon Day**.
 
-If something doesn't refresh, switch to another theme and back, or log out and in. Running `./install.sh` again is always safe.
+Not updating? Switch themes and back, or log out and in. Re-running `./install.sh` is safe.
 
 ### The application style (optional)
 
-The installer also tries to build the button and slider style. It needs a recent system (Qt 6.11+, KDE Frameworks 6.30+) and some build tools. If they're missing, the script says so and everything else still installs. Install the tools for your distro, run `./install.sh` again, then log out and in once.
+The installer also builds the button and slider style. It needs Qt 6.11+, KDE Frameworks 6.30+ and build tools. If they're missing, everything else still installs. Install the tools, run `./install.sh` again, then log out and in.
 
 <details>
 <summary>Build tools for your distro</summary>
@@ -62,18 +62,18 @@ The installer also tries to build the button and slider style. It needs a recent
     sudo apt install cmake g++ extra-cmake-modules qt6-base-dev qt6-declarative-dev libkf6coreaddons-dev libkf6colorscheme-dev \
         libkf6config-dev libkf6guiaddons-dev libkf6iconthemes-dev libkf6windowsystem-dev libkf6style-dev
 
-Package names vary between releases. If the build names a missing package, install that one and run `./install.sh` again.
+Package names vary. If the build reports a missing package, install it and run `./install.sh` again.
 
 </details>
 
 ## Tips
 
-- **Panel transparency:** right-click the panel, choose Edit Mode, then Opacity. Translucent needs KWin's **Blur** effect turned on.
-- **Blurred titlebars:** pick `halcyon-night-blur` or `halcyon-day-blur` under System Settings > Window Decorations.
+- **Panel transparency:** panel Edit Mode > Opacity. Translucent needs KWin's **Blur** effect.
+- **Blurred titlebars:** System Settings > Window Decorations > `halcyon-night-blur` or `halcyon-day-blur`.
 
 ## Known issues
 
-- A small light wedge can show just outside the rounded corners of some popups and windows. This comes from KWin's blur effect, and stock Breeze does it too.
+- A small light wedge can appear outside rounded corners. It comes from KWin's blur effect. Stock Breeze does it too.
 
 ## Uninstall
 
@@ -86,10 +86,10 @@ Switch to another global theme first, then:
 
 ## Credits and license
 
-Halcyon is an independent project, not affiliated with or endorsed by Apple or KDE. No Apple code, fonts, icons or wallpapers are included.
+Independent project, not affiliated with Apple or KDE. No Apple code, fonts, icons or wallpapers included.
 
 - Window decorations are based on **Summaculate** by doncsugar (GPL-3.0).
 - The application style is a fork of **KDE Breeze** (GPL-2.0-or-later).
-- Papirus icons are a separate project and aren't included.
+- Papirus icons are separate and not included.
 
 Released under GPL-3.0-or-later. See `LICENSE`.
