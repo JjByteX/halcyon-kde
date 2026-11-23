@@ -1,39 +1,53 @@
-# Halcyon (alpha)
+# Halcyon
 
-A KDE Plasma theme inspired by macOS 27. Day and night variants, round traffic-light buttons on the left, soft glass edges.
+A KDE Plasma 6 theme inspired by macOS 27, with day and night variants, round traffic-light window buttons on the left, and soft glass panels.
 
-Halcyon is an independent project. It is not affiliated with or endorsed by Apple or KDE. "macOS" and "Apple" are trademarks of
-Apple Inc. No Apple code, fonts, icons, wallpapers or sounds are included, only a similar look.
+> **Alpha.** Halcyon is under active development. Expect rough edges. Bug reports are welcome.
 
-> **Alpha:** Halcyon is under active development. Expect rough edges and changes between versions. Bug reports are welcome.
+## Screenshots
 
-## What's in it
+Breeze (KDE's default) on the left, Halcyon Night on the right.
 
-- **Window decorations** (Aurorae): `halcyon-night-opaque`, `halcyon-night-blur`, `halcyon-day-opaque`, `halcyon-day-blur`.
-  Based on Summaculate by doncsugar.
-- **Plasma style**: `halcyon-glass-dark` and `halcyon-glass-light`. Fills follow your colour scheme.
-- **Application style**: Halcyon Glass, a Qt widget style forked from KDE Breeze (source in `appstyle/`).
-- **Colour schemes**: Halcyon Dark and Halcyon Light.
-- **Global themes**: Halcyon Night and Halcyon Day. Each one applies the pieces above together and puts the window buttons on the
-  left. They leave icons, cursor, fonts and wallpaper alone.
+**The desktop**
+
+![The desktop with System Settings open, Breeze vs Halcyon Night](docs/screenshots/compare-night-settings.png)
+
+**Notification**
+
+![A notification, Breeze vs Halcyon Night](docs/screenshots/compare-night-notification.png)
+
+**Volume overlay**
+
+![The volume overlay, Breeze vs Halcyon Night](docs/screenshots/compare-night-volume.png)
+
+**Application launcher**
+
+![The application launcher, Breeze vs Halcyon Night](docs/screenshots/compare-night-launcher.png)
+
+## What you get
+
+Two global themes, **Halcyon Night** and **Halcyon Day**, that change the window buttons and decorations, panels and popups, colours, buttons and sliders (the optional application style), and icons (Papirus, if you have it installed). Your cursor, fonts and wallpaper stay as they are.
 
 ## Install
 
-You need KDE Plasma 6 on Linux. Open a terminal in the folder where you downloaded `halcyon.zip` and run:
+You need KDE Plasma 6 on Linux. Nothing needs root; everything goes into your home folder.
 
-    unzip halcyon.zip && cd halcyon
-    ./install.sh
+1. Optional: install the Papirus icon theme (the package is called `papirus-icon-theme` on most distros). Halcyon uses it if it's there. To keep your own icons, run the installer with `--no-icons`.
+2. In the folder with `halcyon.zip`, run:
 
-Then open System Settings > Colors & Themes > Global Theme and pick **Halcyon Night** or **Halcyon Day**. Nothing needs root, and
-everything goes into your home directory. It is safe to re-run.
+       unzip halcyon.zip && cd halcyon
+       ./install.sh
 
-That is all most people need. If something doesn't refresh, switch to another theme and back, or log out and in.
+3. Open **System Settings > Colors & Themes > Global Theme** and pick **Halcyon Night** or **Halcyon Day**.
 
-### Optional: the application style
+If something doesn't refresh, switch to another theme and back, or log out and in. Running `./install.sh` again is always safe.
 
-`install.sh` also tries to build Halcyon Glass, the widget style (buttons, sliders, scrollbars). It needs a recent distro (Qt 6.11+,
-KDE Frameworks 6.30+) and some build tools. If they're missing, the script says so, still installs the themes, and your apps keep
-the Breeze look. To add the style, install the tools for your distro, run `./install.sh` again, and log out and in once:
+### The application style (optional)
+
+The installer also tries to build the button and slider style. It needs a recent system (Qt 6.11+, KDE Frameworks 6.30+) and some build tools. If they're missing, the script says so and everything else still installs. Install the tools for your distro, run `./install.sh` again, then log out and in once.
+
+<details>
+<summary>Build tools for your distro</summary>
 
     # Arch / Manjaro
     sudo pacman -S --needed base-devel cmake extra-cmake-modules qt6-base qt6-declarative kcoreaddons kcolorscheme kconfig \
@@ -48,43 +62,18 @@ the Breeze look. To add the style, install the tools for your distro, run `./ins
     sudo apt install cmake g++ extra-cmake-modules qt6-base-dev qt6-declarative-dev libkf6coreaddons-dev libkf6colorscheme-dev \
         libkf6config-dev libkf6guiaddons-dev libkf6iconthemes-dev libkf6windowsystem-dev libkf6style-dev
 
-Package names vary between releases, so if the build names a missing package, install that one. To skip the style entirely, run
-`./install.sh --no-style`. You can also apply a theme from a terminal with `plasma-apply-lookandfeel -a org.jjbytex.halcyon.night`.
+Package names vary between releases. If the build names a missing package, install that one and run `./install.sh` again.
 
-The blur decoration variants aren't used by the global themes; pick them under Window Decorations if you want them.
+</details>
 
-## Status
+## Tips
 
-Halcyon is in alpha. The decorations and Plasma styles were mostly checked in mock-ups rather than a live Plasma session, so expect some
-rough edges. The application style is the roughest part: it hasn't been built against a full Qt 6 / KF6 setup yet, so expect
-compile errors or visual glitches. See `appstyle/NOTES.md`.
+- **Panel transparency:** right-click the panel, choose Edit Mode, then Opacity. Translucent needs KWin's **Blur** effect turned on.
+- **Blurred titlebars:** pick `halcyon-night-blur` or `halcyon-day-blur` under System Settings > Window Decorations.
 
-Aurorae can't round the bottom corners of windows without borders. Breeze gets around that inside KWin as of Plasma 6.5, but a
-theme can't.
+## Known issues
 
-## Corner radii
-
-Halcyon is macOS-inspired but keeps its own, tighter corner radii; it does not copy macOS's (the real Dock, menus and alerts are
-much rounder). Radius follows the role of a shape:
-
-- **Surface, 10px:** windows, dialogs and popups, menus, alerts, and the dock.
-- **Control, 6px:** buttons, fields, tabs, and small pieces inside a surface, plus tooltips and dock labels.
-- A shape nested inside a surface is smaller than it (inner = outer minus padding); the dock's attention tint is 8px.
-
-The values live in `tools/radii.py`; the generators read them from there. `python3 tools/radii.py --check` confirms the C++ style
-and the shipped Plasma pieces still match.
-
-## Rebuilding the artwork
-
-The button, decoration and widget SVGs are generated by the scripts in `tools/` (needs numpy, scipy and pillow). Re-run
-`tools/gen_buttons.py` or `tools/gen_decoration_macos.py` from the repo root after changing them. After changing a radius in
-`tools/radii.py`, run `tools/gen_panel_frame.py` (dock and tooltip frames), then `tools/gen_panel_variants.py` (their opaque and
-translucent copies; needs cairosvg too), and rebuild the other generators that use it (`gen_alert.py` then `gen_popup_shadow.py`
-for dialogs, `gen_decoration_macos.py`, `gen_tasks.py`). The C++ constants in `appstyle/kstyle/breezemetrics.h` are edited by hand,
-then `tools/radii.py --check` confirms they match.
-
-Qt Quick apps (System Settings, Discover) draw their own switches. `install.sh` builds the replacement from `qt-quick/` into a
-private copy of qqc2-desktop-style (needs git, cmake and network; skip with `--no-qtquick`). Manual steps: `qt-quick/README.md`.
+- A small light wedge can show just outside the rounded corners of some popups and windows. This comes from KWin's blur effect, and stock Breeze does it too.
 
 ## Uninstall
 
@@ -97,35 +86,10 @@ Switch to another global theme first, then:
 
 ## Credits and license
 
-Window decorations are based on Summaculate by doncsugar (GPL-3.0). The application style is a fork of KDE Breeze
-(GPL-2.0-or-later, see the SPDX headers in `appstyle/`). Other parts keep their own licenses and copyright notices.
+Halcyon is an independent project, not affiliated with or endorsed by Apple or KDE. No Apple code, fonts, icons or wallpapers are included.
 
-Halcyon as a whole is released under GPL-3.0-or-later. See `LICENSE`. Apple's trademarks, fonts, wallpapers and sounds are not
-covered by it and remain Apple's property.
+- Window decorations are based on **Summaculate** by doncsugar (GPL-3.0).
+- The application style is a fork of **KDE Breeze** (GPL-2.0-or-later).
+- Papirus icons are a separate project and aren't included.
 
-## Panel opacity (Adaptive / Opaque / Translucent)
-
-Each Plasma style turns on `[AdaptiveTransparency]` in its `plasmarc` and ships `opaque/` and `translucent/` copies of
-`widgets/panel-background.svg` and `dialogs/background.svg`, so *Edit Mode → Opacity* offers all three choices.
-Translucent is the see-through macOS-style glass; it needs KWin's **Blur** (and ideally **Background Contrast**) desktop
-effect enabled. Regenerate the variants with `python3 tools/gen_panel_variants.py` (alpha values are at the top of the script).
-
-## Dock / task buttons
-
-`widgets/tasks.svg` (generated by `tools/gen_tasks.py`) styles the task-manager buttons. Like the macOS Dock there is no
-tile behind icons and no highlight on hover or focus (only the name label appears, see below); only the "attention" state
-gets a soft rounded accent tint. Without this file Plasma falls back to the default style's square, full-height cells.
-
-**Running-app dot.** Running apps get a small round dot centred under the icon, like the Dock; pinned apps that aren't running get
-none. Plasma's task manager draws no indicator itself, so the dot is painted by `tasks.svg` as one wide tile stretched to the
-button (the same approach as WhiteSur). It is a perfect circle when the tile matches your button width and only slightly oval when it
-doesn't (a few % per px of error). To match it, tell the installer your dock's button width:
-
-    ./install.sh --dock-button 68
-
-For an icons-only task manager on a horizontal panel, button width = panel thickness + 6 (times the Icon spacing setting, 1 by
-default). The default is 68, for a 62px panel. The dot is drawn for a panel on the bottom edge only. Size, gap and opacity are
-constants at the top of `tools/gen_tasks.py`.
-
-The hover label is `widgets/tooltip.svg`. `opaque/` and `translucent/` copies of it (made by `tools/gen_panel_variants.py`)
-give it the same frosted-glass look as the panel when KWin Blur is on.
+Released under GPL-3.0-or-later. See `LICENSE`.

@@ -1,6 +1,9 @@
 [kdeglobals][General]
 ColorScheme=HalcyonLight
 
+[kdeglobals][Icons]
+Theme=Papirus-Light
+
 [kdeglobals][KDE]
 widgetStyle=Breeze
 

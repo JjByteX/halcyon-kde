@@ -4,6 +4,7 @@
 #   ./install.sh              install everything; build the application style if the build tools are present
 #   ./install.sh --no-style   skip the application style (the global themes then use Breeze for widgets)
 #   ./install.sh --no-qtquick skip the Qt Quick switch (System Settings, Discover keep the Breeze toggle)
+#   ./install.sh --no-icons   leave your icon theme alone (otherwise Night/Day use Papirus-Dark/Papirus-Light when installed)
 #   ./install.sh --dock-button N   centre the running-app dot for a dock whose icon buttons are N px wide (default 68; see README)
 set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -40,6 +41,31 @@ if [[ -n "$dock_button" ]]; then
     fi
 fi
 echo "Installed themes to $dest"
+
+# Icons: Night uses Papirus-Dark and Day uses Papirus-Light. Papirus is not bundled, so a global theme only switches to it
+# if it is installed; otherwise the icon line is dropped and your current icons stay.
+icon_theme_found() {
+    local d data_dirs
+    IFS=: read -ra data_dirs <<<"${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+    for d in "$dest/icons" "$HOME/.icons" "${data_dirs[@]/%//icons}"; do
+        [[ -d "$d/$1" ]] && return 0
+    done
+    return 1
+}
+missing_icons=()
+for pair in night:Papirus-Dark day:Papirus-Light; do
+    defaults="$dest/plasma/look-and-feel/org.jjbytex.halcyon.${pair%%:*}/contents/defaults"
+    if [[ " $* " != *" --no-icons "* ]] && icon_theme_found "${pair#*:}"; then
+        echo "Icons: ${pair%%:*} uses ${pair#*:}"
+    else
+        sed -i '/^\[kdeglobals\]\[Icons\]$/,/^$/d' "$defaults"
+        [[ " $* " != *" --no-icons "* ]] && missing_icons+=("${pair#*:}")
+    fi
+done
+if [[ ${#missing_icons[@]} -gt 0 ]]; then
+    echo "Papirus not found (${missing_icons[*]}), so those themes keep your current icons."
+    echo "Install the papirus-icon-theme package (pacman, dnf, apt and zypper all call it that), then run ./install.sh again."
+fi
 
 style_ok=0
 if [[ " $* " != *" --no-style "* ]]; then
